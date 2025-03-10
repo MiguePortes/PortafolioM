@@ -3,25 +3,30 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #001f3f; /* Fondo azul marino */
+    background-color: #050036; /* Fondo azul marino */
     color: #fff; /* Texto en blanco */
+    background-image: url(assets/img/logoreactpng.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-main{
-    background-color: #0b0031;
-    color: #fff;
+/* Main */
+main {
+    /*background-color: #000530;*/
+    color: white;
 }
-
 
 /* Header */
 header {
-    background-color: #040026;
+    /*background-color: #00012d;*/
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    border-bottom: 2px solid #007bff; /* Línea divisoria entre header y main */
+    border-bottom: 2px solid #007bff; /* Línea divisoria */
 }
 
 nav ul {
@@ -61,6 +66,7 @@ nav ul li a {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
+    box-shadow: 0 0 15px 5px #007bff; /* Sombra azul alrededor de la foto */
 }
 
 .tools {
@@ -113,12 +119,14 @@ nav ul li a {
     margin: 30px 0;
 }
 
-/* Main */
-main {
-    border-bottom: 2px solid #007bff; /* Línea divisoria entre main y footer */
-}
-
 /* Estudios */
+
+/*#estudios h2 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}*/
+
+
 .estudio-item {
     display: flex;
     align-items: center;
@@ -133,8 +141,14 @@ main {
 }
 
 /* Proyectos */
+#proyectos h2 {
+    text-align: center; /* Centrar el título de la sección "Proyectos" */
+    margin-bottom: 20px; /* Añade un margen inferior para separación */
+}
+
 .proyectos-container {
     display: flex;
+    text-align: center;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -144,7 +158,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra ligera */
+    box-shadow: 0 0 10px rgb(0, 26, 194); /* Sombra ligera */
 }
 
 .proyecto-img {
@@ -166,9 +180,69 @@ main {
 
 /* Footer */
 footer {
-    background-color: #0b0031; /* Azul marino más oscuro */
+    /*background-color: #000130; /* Azul marino más oscuro */
     color: white;
     text-align: center;
     padding: 20px;
 }
 
+/* ---- Responsividad ---- */
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: center;
+        text-align: center;
+    }
+
+    .tools {
+        gap: 10px; /* Reduce el espaciado entre los iconos */
+    }
+
+    .cert-icon {
+        width: 70px; /* Reduce el tamaño de los íconos en tablets */
+        height: 70px;
+    }
+
+    .proyecto {
+        width: 90%; /* Ajusta el ancho de los proyectos en tablets */
+    }
+}
+
+/* Móviles y dispositivos pequeños */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Alinea el contenido del header en columna */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-content {
+        padding: 20px;
+    }
+
+    .profile-pic {
+        width: 120px; /* Reduce el tamaño de la foto de perfil */
+        height: 120px;
+        box-shadow: 0 0 10px 3px #007bff; /* Ajustar sombra azul en móviles */
+    }
+
+    .tools {
+        flex-wrap: wrap; /* Permite que los iconos ocupen varias líneas */
+    }
+
+    .tool-icon {
+        width: 30px; /* Reduce el tamaño de los iconos en móviles */
+        height: 30px;
+    }
+
+    .cert-icon {
+        width: 60px; /* Reduce aún más el tamaño de los íconos */
+        height: 60px;
+    }
+
+    .proyecto {
+        width: 100%; /* Ocupa todo el ancho en móviles */
+    }
+}
