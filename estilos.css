@@ -1,10 +1,9 @@
-/* General */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #050036; /* Fondo azul marino */
-    color: #fff; /* Texto en blanco */
+    background-color: #050036; 
+    color: #fff;
     background-image: url(assets/img/logoreactpng.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,21 +11,18 @@ body {
     background-position: center;
 }
 
-/* Main */
 main {
-    /*background-color: #000530;*/
     color: white;
 }
 
-/* Header */
 header {
-    /*background-color: #00012d;*/
+   
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    border-bottom: 2px solid #007bff; /* Línea divisoria */
+    border-bottom: 2px solid #007bff;
 }
 
 nav ul {
@@ -41,7 +37,6 @@ nav ul li a {
     font-weight: 600;
 }
 
-/* Hero Section */
 .hero-content {
     display: flex;
     justify-content: space-between;
@@ -66,7 +61,7 @@ nav ul li a {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-    box-shadow: 0 0 15px 5px #007bff; /* Sombra azul alrededor de la foto */
+    box-shadow: 0 0 15px 5px #007bff; 
 }
 
 .tools {
@@ -81,7 +76,6 @@ nav ul li a {
     height: 40px;
 }
 
-/* Certificaciones */
 .certificaciones {
     margin-top: 30px;
     text-align: center;
@@ -108,24 +102,15 @@ nav ul li a {
 .certificacion p {
     margin: 0;
     font-size: 14px;
-    color: #fff; /* Mantener texto en blanco */
+    color: #fff;
     font-weight: bold;
 }
 
-/* Línea divisoria */
 .divider {
     height: 2px;
-    background-color: #007bff; /* Línea azul divisoria */
+    background-color: #007bff;
     margin: 30px 0;
 }
-
-/* Estudios */
-
-/*#estudios h2 {
-    text-align: center; 
-    margin-bottom: 20px; 
-}*/
-
 
 .estudio-item {
     display: flex;
@@ -140,10 +125,9 @@ nav ul li a {
     height: auto;
 }
 
-/* Proyectos */
 #proyectos h2 {
-    text-align: center; /* Centrar el título de la sección "Proyectos" */
-    margin-bottom: 20px; /* Añade un margen inferior para separación */
+    text-align: center; 
+    margin-bottom: 20px; 
 }
 
 .proyectos-container {
@@ -158,7 +142,7 @@ nav ul li a {
     padding: 20px;
     border-radius: 10px;
     width: 300px;
-    box-shadow: 0 0 10px rgb(0, 26, 194); /* Sombra ligera */
+    box-shadow: 0 0 10px rgb(0, 26, 194);
 }
 
 .proyecto-img {
@@ -178,42 +162,36 @@ nav ul li a {
     height: 40px;
 }
 
-/* Footer */
 footer {
-    /*background-color: #000130; /* Azul marino más oscuro */
     color: white;
     text-align: center;
     padding: 20px;
 }
 
-/* ---- Responsividad ---- */
-
-/* Tablets y dispositivos medianos */
 @media (max-width: 768px) {
     .hero-content {
-        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .tools {
-        gap: 10px; /* Reduce el espaciado entre los iconos */
+        gap: 10px; 
     }
 
     .cert-icon {
-        width: 70px; /* Reduce el tamaño de los íconos en tablets */
+        width: 70px; 
         height: 70px;
     }
 
     .proyecto {
-        width: 90%; /* Ajusta el ancho de los proyectos en tablets */
+        width: 90%; 
     }
 }
 
-/* Móviles y dispositivos pequeños */
 @media (max-width: 480px) {
     header {
-        flex-direction: column; /* Alinea el contenido del header en columna */
+        flex-direction: column; 
         text-align: center;
         padding: 20px;
     }
@@ -223,26 +201,26 @@ footer {
     }
 
     .profile-pic {
-        width: 120px; /* Reduce el tamaño de la foto de perfil */
+        width: 120px; 
         height: 120px;
-        box-shadow: 0 0 10px 3px #007bff; /* Ajustar sombra azul en móviles */
+        box-shadow: 0 0 10px 3px #007bff; 
     }
 
     .tools {
-        flex-wrap: wrap; /* Permite que los iconos ocupen varias líneas */
+        flex-wrap: wrap;
     }
 
     .tool-icon {
-        width: 30px; /* Reduce el tamaño de los iconos en móviles */
+        width: 30px; 
         height: 30px;
     }
 
     .cert-icon {
-        width: 60px; /* Reduce aún más el tamaño de los íconos */
+        width: 60px;
         height: 60px;
     }
 
     .proyecto {
-        width: 100%; /* Ocupa todo el ancho en móviles */
+        width: 100%; 
     }
 }
